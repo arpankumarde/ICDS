@@ -5,30 +5,30 @@ import { IoStatsChart } from "react-icons/io5";
 const NewsCard = ({ heading, photo }) => {
   return (
     <>
-      <div className="my-4 rounded-lg backdrop-blur-md p-2 bg-white">
-        <div className="bg-pink-900 flex gap-1">
+      <div className="my-4 rounded-lg backdrop-blur-md p-4 bg-white">
+        <div className="w-full">
           <img
             src={photo}
             alt={heading}
-            className="w-28 rounded-lg bg-center"
+            className="rounded-lg bg-center w-full"
           />
           <div>{heading}</div>
         </div>
-        <div className="flex justify-between text-sm mt-4">
-          <div className="flex gap-2">
+        <div className="flex justify-between items-center text-sm mt-4">
+          <div className="flex gap-4">
             <button className="hover:text-green-500">
-              <BiSolidUpvote className="inline" />
+              <BiSolidUpvote className="inline mr-1" />
               Upvote
             </button>
-            <button className="">
-              <BiSolidDownvote className="inline group-hover:text-red-500" />
+            <button className="hover:text-red-500">
+              <BiSolidDownvote className="inline" />
               Downvote
             </button>
           </div>
-          <div className="flex items-center gap-1">
+          {/* <div className="flex items-center gap-1">
             <IoStatsChart className="" />
             302 views
-          </div>
+          </div> */}
         </div>
         <div></div>
       </div>

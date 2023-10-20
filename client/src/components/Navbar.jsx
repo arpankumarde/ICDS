@@ -13,8 +13,12 @@ const Navbar = () => {
         <Link to="/social">
           <BsPeopleFill />
         </Link>
-        <IoIosNotifications />
-        <SiReactos className="custom-animate-spin" />
+        <Link to="/notification">
+          <IoIosNotifications />
+        </Link>
+        <Link to="/simulation">
+          <SiReactos className="custom-animate-spin" />
+        </Link>
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import { Home, Login, Social } from "./screens";
+import { Home, Login, Social, Notification } from "./screens";
 
 const App = () => {
   return (
@@ -8,8 +8,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/notification" element={<Login />} />
-        <Route path="/notification/:id" element={<Login />} />
+        <Route path="/notification" element={<Notification />} />
+        <Route path="/notification/:id" element={<Notification />} />
         <Route path="/login" element={<Login />} />
         <Route path="/social" element={<Social />} />
       </Routes>

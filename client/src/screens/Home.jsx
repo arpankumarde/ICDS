@@ -5,7 +5,12 @@ const Home = () => {
   return (
     <>
       <div>Home</div>
-      <Link to="/login">Login</Link>
+      <div className="flex flex-col mt-10">
+        <Link to="/login">Login</Link>
+        <Link to="/social">Social</Link>
+        <Link to="/notification">Notification</Link>
+        <Link to="/simulation">Simulation</Link>
+      </div>
     </>
   );
 };
